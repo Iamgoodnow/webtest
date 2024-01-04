@@ -1,3 +1,5 @@
 while(true){
-  console.log(document.getElementById("t1").value)
+  setTimeout((){
+    console.log(document.getElementById("t1").value);
+  }, 200);
 }
