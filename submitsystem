@@ -1,0 +1,3 @@
+function returnobject(a){
+    console.log(a)
+}
